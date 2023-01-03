@@ -1,6 +1,6 @@
 package com.PortfolioArgP.PortfolioArgP.Security.Repository;
 
-import com.PortfolioArgP.PortfolioArgP.Entity.Persona;
+import com.PortfolioArgP.PortfolioArgP.Entity.Person;
 import com.PortfolioArgP.PortfolioArgP.Security.Entity.Rol;
 import com.PortfolioArgP.PortfolioArgP.Security.Enums.RolName;
 import java.util.Optional;
