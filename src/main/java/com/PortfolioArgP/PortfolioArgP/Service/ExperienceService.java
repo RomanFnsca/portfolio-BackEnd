@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Transactional
-public class SExperience {
+public class ExperienceService {
 
     @Autowired
     RExperience rExperience;
@@ -23,7 +23,7 @@ public class SExperience {
         return rExperience.findById(id);
     }
 
-    public Optional<Experience> getByNameEducation(String nameExperience) {
+    public Optional<Experience> getByNameExperience(String nameExperience) {
         return rExperience.findByNameExperience(nameExperience);
     }
     
@@ -39,7 +39,7 @@ public class SExperience {
         return rExperience.existsById(id);
     }
     
-    public boolean existByNameEducation(String nameExperience){
+    public boolean existByNameExperience(String nameExperience){
         return rExperience.existsByNameExperience(nameExperience);
     }
     
