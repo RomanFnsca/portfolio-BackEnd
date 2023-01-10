@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/Experience")
-@CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("/experience")
+@CrossOrigin(origins = "http://localhost:4200") 
 public class ExperienceController {
     @Autowired
     ExperienceService experienceService;
@@ -70,7 +70,7 @@ public class ExperienceController {
 
     }
 
-    @PutMapping("update/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody DtoExperience dtoExperience) {
         //Validaciones
         if (!experienceService.existById(id)) {
